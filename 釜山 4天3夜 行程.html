@@ -80,20 +80,22 @@ td:last-child{text-align:right;white-space:nowrap;font-weight:600}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 .cmp{margin-top:8px;padding:8px 10px;border-radius:10px;background:var(--chip);font-size:12px;line-height:1.6}.cmp .rec{font-weight:700;color:var(--dc);margin-top:2px}
 .base{margin:6px 0 10px;padding:10px 14px;border-radius:14px;background:var(--card);box-shadow:var(--sh);font-size:13px;border-left:5px solid var(--dc)}
+button.nv{font:inherit;font-size:12px;font-weight:600;color:#fff;background:var(--dc);border:0;border-radius:8px;padding:3px 10px}
 </style>
 </head>
 <body>
-<header><span class="oc">🐙</span><h1>釜山 4天3夜 🇰🇷</h1><div class="hs">海雲台左洞住宿 ・ Visit Busan Pass Big 3<br>價格為約數（₩），出發前請再核對</div><div class="fl"><span>✈️ 真航空 02:10 → 06:10</span><span>🛬 華航 10:10 → 11:50</span></div><div class="wx">🌤 十月釜山約 14–23°C，早晚涼，備薄外套與折傘 ・ <a href="https://www.google.com/search?q=%E9%87%9C%E5%B1%B1+%E5%A4%A9%E6%B0%A3" target="_blank" rel="noopener">查即時天氣</a></div><div class="fx"><label>NT$<input id="tw" type="number" inputmode="decimal"></label><span>⇄</span><label>₩<input id="kw" type="number" inputmode="decimal"></label></div><div class="rt">1 NT$ ≈ ₩<input id="rt" type="number" inputmode="decimal" step="0.1">（臺銀 8 月現金賣出參考，出發前請更新）</div><div class="pr"><div class="bar"><i id="pb"></i></div><span id="pt">0/0</span></div><div class="sea"><span class="boat">⛵</span></div></header>
+<header><span class="oc">🐙</span><h1>釜山 4天3夜 🇰🇷</h1><div class="hs">海雲台左洞住宿 ・ Visit Busan Pass Big 3<br>價格為約數（₩），出發前請再核對</div><div class="fl"><span>✈️ 真航空 02:10 → 06:10</span><span>🛬 華航 10:10 → 11:50</span><span>👥 5 人</span></div><div class="wx">🌤 十月釜山約 14–23°C，早晚涼，備薄外套與折傘 ・ <a href="https://www.google.com/search?q=%E9%87%9C%E5%B1%B1+%E5%A4%A9%E6%B0%A3" target="_blank" rel="noopener">查即時天氣</a></div><div class="fx"><label>NT$<input id="tw" type="number" inputmode="decimal"></label><span>⇄</span><label>₩<input id="kw" type="number" inputmode="decimal"></label></div><div class="rt">1 NT$ ≈ ₩<input id="rt" type="number" inputmode="decimal" step="0.1">（臺銀 8 月現金賣出參考，出發前請更新）</div><div class="pr"><div class="bar"><i id="pb"></i></div><span id="pt">0/0</span></div><div class="sea"><span class="boat">⛵</span></div></header>
 <nav id="nav"></nav>
 <div id="main"></div>
 <p class="warn">導航按鈕會開 Naver 地圖（韓國最準）與 Google 地圖。打勾進度會存在這支手機的瀏覽器。</p>
+<div id="ts" style="position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#3f3a37;color:#fff;padding:8px 14px;border-radius:999px;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:20;white-space:nowrap"></div>
 <script>
 var D=[
 {n:"Day 1",t:"補眠・天空膠囊・海雲台",items:[
 ["02:10","台北桃園起飛（真航空）","建議 23:30 前到機場；夜間班機記得帶薄外套","",""],
 ["06:10","抵達金海機場，與接機司機會合","入境、領行李後依接機指示集合，司機直接送到住宿","接機已安排","김해국제공항"],
 ["07:30","抵達住宿，寄放行李、補眠","地址給司機看：부산 해운대구 좌동순환로 49 2층（五德豬排 2 樓）；睡到中午，行程從午後開始","","해운대구 좌동순환로 49"],
-["12:30","起床出發，午餐：密陽豬肉湯飯 海雲台店","24 小時營業，熱湯暖胃","₩10,000/人","밀양순대돼지국밥 해운대점","",{"a": "장산역 步行約 5–10 分＋車程約 6–8 分，₩1,700/人（3 人 ₩5,100、4 人 ₩6,800）", "b": "約 10–15 分，₩5,000–7,000（3 人每人約 ₩2,000、4 人約 ₩1,500）", "r": "睡完要趕行程 → 3–4 人搭計程車，差價小又省時間；人少又不趕才搭地鐵"}],
+["12:30","起床出發，午餐：密陽豬肉湯飯 海雲台店","24 小時營業，熱湯暖胃","₩10,000/人","밀양순대돼지국밥 해운대점","",{"a": "장산역 步行約 5–10 分＋車程約 6–8 分，₩1,700/人（5 人共 ₩8,500）", "b": "約 10–15 分，2 台計程車共 ₩10,000–14,000（每人約 ₩2,000–2,800）", "r": "睡完要趕行程 → 5 人搭 2 台計程車，每人只多約 ₩300–1,100，省時間；想省錢才搭地鐵"}],
 ["14:00","計程車到 Mipo 站（미포정거장）","從海雲台站約 10 分鐘","計程車約 ₩4,000–5,000","해운대 블루라인파크 미포정거장"],
 ["14:30","天空膠囊 미포 → 청사포","❌不含 Pass，先在 Blueline Park 官網訂好 14:30 左右場次，靠海側","約 ₩35,000 起/車廂","해운대 블루라인파크 미포정거장"],
 ["15:00","青沙浦：紅白燈塔、踏石展望台","約 1 小時，天黑前最好看","免費","청사포 다릿돌전망대"],
@@ -104,17 +106,17 @@ var D=[
 ["21:15","回住宿","地鐵 ₩1,700 內，或計程車 ₩5,000–7,000","","해운대구 좌동순환로 49"]
 ]},
 {n:"Day 2",t:"滑坡車・樂天 Outlet・海東龍宮寺",items:[
-["09:30","從住宿出發到 Skyline Luge 滑坡車","開放約 10:00；先在官網或票券平台買票通常較便宜","計程車約 ₩20,000–25,000","스카이라인 루지 부산","",{"a": "장산역 → 2 號線到 벡스코 → 轉東海線到 오시리아，再走約 10 分，合計約 50–60 分、約 ₩3,400/人", "b": "約 25–35 分，₩20,000–25,000（3 人每人約 ₩7,500、4 人約 ₩5,500）", "r": "計程車省 25 分鐘以上，每人多付約 ₩2,000–4,000 → 建議計程車；想省錢才搭地鐵（以 Naver 路線為準）"}],
+["09:30","從住宿出發到 Skyline Luge 滑坡車","開放約 10:00；先在官網或票券平台買票通常較便宜","計程車約 ₩20,000–25,000","스카이라인 루지 부산","",{"a": "장산역 → 2 號線到 벡스코 → 轉東海線到 오시리아，再走約 10 分，合計約 50–60 分、約 ₩3,400/人（5 人共 ₩17,000）", "b": "約 25–35 分，2 台計程車共 ₩40,000–50,000（每人約 ₩8,000–10,000）", "r": "計程車省 25 分鐘以上，5 人每人多付約 ₩4,600–6,600 → 想省時間叫 Kakao T 大型車或 2 台；想省錢搭地鐵（以 Naver 路線為準）"}],
 ["10:15","Skyline Luge 滑坡車（Sky Ride 纜車上山）","3–5 次；營業約 10:00–18:00，最後入場提早 30 分","約 ₩26,000–37,000/人（依次數與票券）","스카이라인 루지 부산"],
 ["12:00","午餐：樂天 Outlet 美食街","步行或計程車 ₩5,000 內","₩10,000–15,000/人","롯데프리미엄아울렛 동부산점"],
 ["13:00","樂天 Premium Outlet 東釜山店逛街","外國旅客可辦退稅，記得帶護照","自備購物金","롯데프리미엄아울렛 동부산점"],
 ["15:45","計程車到 海東龍宮寺（해동용궁사）","臨海寺廟，免費入場，車程約 10–15 分","計程車約 ₩8,000–12,000","해동용궁사"],
 ["17:15","松亭海灘（송정해수욕장）看日落","海灘咖啡街散步，離龍宮寺約 10 分鐘","計程車約 ₩5,000–8,000","송정해수욕장"],
 ["18:45","晚餐：松亭海鮮或烤肉","","₩12,000–25,000/人","송정 맛집"],
-["20:15","回住宿","計程車約 ₩15,000–22,000（4 人分攤划算）","","해운대구 좌동순환로 49"]
+["20:15","回住宿","單台計程車約 ₩15,000–22,000；5 人需 2 台或大型車","","해운대구 좌동순환로 49"]
 ]},
 {n:"Day 3",t:"松島・影島・西面",items:[
-["09:00","從住宿出發，Kakao T 叫車到松島","3–4 人合乘最划算","計程車約 ₩28,000–35,000","송도해상케이블카 송도베이스테이션","",{"a": "장산역 → 西面轉 1 號線 → 南浦轉公車，約 1.5–2 小時，₩3,000–4,000/人", "b": "約 40–55 分，₩28,000–35,000（3 人每人約 ₩10,000、4 人約 ₩8,000）", "r": "計程車省 1 小時以上，分攤後每人 ₩8,000–10,000 → 建議計程車（Kakao T）"}],
+["09:00","從住宿出發，Kakao T 叫車到松島","5 人需 2 台或 Kakao T 大型車（Venti）","計程車約 ₩28,000–35,000","송도해상케이블카 송도베이스테이션","",{"a": "장산역 → 西面轉 1 號線 → 南浦轉公車，約 1.5–2 小時，₩3,000–4,000/人", "b": "約 40–55 分，2 台計程車共 ₩56,000–70,000（每人約 ₩11,200–14,000）", "r": "計程車省 1 小時以上，每人多約 ₩8,000–10,000 → 建議計程車，Kakao T 大型車較方便"}],
 ["09:45","松島海上纜車（水晶車廂）⭐Pass 第 3 項","21:00 營業，早去人少","原價約 ₩20,000","송도해상케이블카 송도베이스테이션","pass"],
 ["11:15","松島龍宮雲橋散步","","免費","송도용궁구름다리"],
 ["12:15","計程車到影島 海女村","約 30 分鐘","₩15,000–20,000","영도해녀촌"],
@@ -123,13 +125,13 @@ var D=[
 ["16:30","計程車到西面","約 30–40 分鐘","₩15,000–20,000","서면역"],
 ["17:30","晚餐：西面美食（豬肉湯飯小巷、烤肉）","","₩12,000–25,000/人","서면 맛집"],
 ["19:00","西面逛街：地下街、樂天百貨、1 番街、田浦咖啡街","","自備購物金","서면 지하상가"],
-["21:45","回住宿","地鐵 2 號線 西面 → 장산역約 40–45 分、₩1,700 內；3–4 人也可計程車約 ₩25,000–30,000","","해운대구 좌동순환로 49"],
+["21:45","回住宿","地鐵 2 號線 西面 → 장산역約 40–45 分、₩1,700 內；5 人也可叫 2 台計程車，每台約 ₩25,000–30,000","","해운대구 좌동순환로 49"],
 ["22:30","回住宿，打包行李（明早很早）","護照、登機證放最外面","",""]
 ]},
 {n:"Day 4",t:"早班返程",items:[
 ["05:45","起床，最後檢查","充電寶放隨身、退稅單、伴手禮","",""],
-["06:15","Check-out","前一晚先結帳、先叫好車更保險","",""],
-["06:30","從住宿搭車到金海機場","清晨車少，Kakao T 預約最保險","計程車約 ₩40,000–50,000","김해국제공항 국제선","",{"a": "장산역 → 沙上站轉金海輕軌，約 1 小時 20 分，₩2,900–3,300/人，首班車約 05:30", "b": "約 45–55 分，₩40,000–50,000（3 人每人約 ₩15,000、4 人約 ₩11,000）", "r": "要趕 10:10 的班機 → 建議計程車，前一晚先用 Kakao T 預約；想省錢才搭地鐵，須 05:30 前出門"}],
+["06:15","Check-out","前一晚先結帳，並跟包車司機確認時間","",""],
+["06:30","包車到金海機場","司機 LINE：釜山司機Dongjun Ha","包車 ₩70,000（已訂）","김해국제공항 국제선","",{"a": "장산역 → 沙上站轉金海輕軌，約 1 小時 20 分，₩2,900–3,300/人", "b": "已訂包車 ₩70,000，約 45–55 分（5 人每人約 ₩14,000）", "r": "已訂包車 → 直接搭；比 2 台計程車（約 ₩80,000–100,000）划算，前一晚用 LINE 跟司機確認出發時間、地址，以及 5 人和行李放得下"}],
 ["07:20","抵達機場","國際線 08:10 前辦完最安心","","김해국제공항 국제선"],
 ["07:30","報到、託運、退稅、免稅店","","",""],
 ["09:30","登機門就位","","",""],
@@ -137,7 +139,7 @@ var D=[
 ["11:50","抵達台北桃園","","",""]
 ]}
 ];
-var B=[["飲食（含早午晚）","₩110,000–180,000"],["計程車（3–4 人分攤）","₩50,000–70,000"],["天空膠囊","₩17,500 起/人"],["滑坡車","約 ₩26,000–37,000"],["地鐵零星","₩10,000"],["Pass 抵扣項目原價合計","約 ₩55,000–57,000"]];
+var B=[["飲食（含早午晚）","₩110,000–180,000"],["計程車 Day 1–3（5 人用 2 台分攤）","約 ₩55,000–75,000"],["回程包車（₩70,000 ÷ 5）","約 ₩14,000"],["天空膠囊","₩17,500 起/人"],["滑坡車","約 ₩26,000–37,000"],["地鐵零星","₩10,000"],["Pass 抵扣項目原價合計","約 ₩55,000–57,000"]];
 var PRE=["啟用 Visit Busan Pass（App / QR）","訂天空膠囊車票（Blueline Park 官網）","安裝 Kakao T、Naver Map","準備 eSIM 或漫遊","護照效期、行李秤重","Day 1 / Day 4 住宿確認寄放與早退房","Skyline Luge 先買票（官網或票券平台）","天空膠囊訂 Day 1 下午場次"];
 var S={};try{S=JSON.parse(localStorage.getItem("bsn")||"{}")}catch(e){}
 function sv(){try{localStorage.setItem("bsn",JSON.stringify(S))}catch(e){}}
@@ -145,13 +147,14 @@ var cur=0,C=["#c98f87","#86a393","#9a97b5","#c4a77c"];function ico(t){var m=[["�
 function pg(){var tot=0,dn=0;D.forEach(function(d,i){d.items.forEach(function(_,j){tot++;if(S["i"+i+"-"+j])dn++})});document.getElementById("pb").style.width=(tot?dn/tot*100:0)+"%";document.getElementById("pt").textContent=dn+"/"+tot+" 完成"}
 function nav(){var h="";D.forEach(function(d,i){h+='<button class="'+(cur===i?"on":"")+'" data-i="'+i+'"'+(cur===i?' style="background:'+C[i]+'"':"")+'>'+d.n+'</button>'});h+='<button class="'+(cur===9?"on":"")+'" data-i="9"'+(cur===9?' style="background:#8a8480"':"")+'>預算・清單</button>';var n=document.getElementById("nav");n.innerHTML=h;n.querySelectorAll("button").forEach(function(b){b.onclick=function(){cur=+b.dataset.i;render()}})}
 function cmp(c){return c?'<div class="cmp"><div>🚇 '+c.a+'</div><div>🚕 '+c.b+'</div><div class="rec">✅ '+c.r+'</div></div>':""}
+function nh(q){var ua=navigator.userAgent,e=encodeURIComponent(q);if(/Android/i.test(ua))return "intent://search?query="+e+"&appname=busan.trip#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;S.browser_fallback_url="+encodeURIComponent(ln(q))+";end";if(/iPhone|iPad|iPod/i.test(ua))return "nmap://search?query="+e+"&appname=busan.trip";return ln(q)}
 function ln(k){return "https://map.naver.com/p/search/"+encodeURIComponent(k)}
 function gl(k){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(k)}
 function render(){nav();var m=document.getElementById("main"),h="";
 if(cur===9){h='<div class="card"><b>💰 預算估計（每人）</b><table>';B.forEach(function(r){h+="<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"});h+='</table></div><div class="card"><b>✅ 行前清單</b>';PRE.forEach(function(p,k){var c=S["p"+k]?"checked":"";h+='<label style="display:flex;gap:10px;align-items:center;padding:6px 0"><input type="checkbox" data-p="'+k+'" '+c+'>'+p+'</label>'});h+="</div>";m.innerHTML=h;m.querySelectorAll("input").forEach(function(x){x.onchange=function(){S["p"+x.dataset.p]=x.checked;sv()}});pg();return}
-var d=D[cur];h='<div class="t"><div class="base" style="--dc:'+C[cur]+'">📍 <b>住宿基準點</b><br>釜山市海雲臺區佐洞循環路 49 號 2F（五德豬排 2 樓）<div class="nt">最近地鐵約為 2 號線 장산역，步行約 5–10 分（以 Naver 為準）。每天第一程都從這裡算。</div><div class="row"><a class="nv" target="_blank" rel="noopener" href="'+ln("해운대구 좌동순환로 49")+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl("부산 해운대구 좌동순환로 49")+'">Google</a></div></div><div class="dh" style="--dc:'+C[cur]+'"><b>'+d.n+'</b>'+d.t+'</div><div class="tl" style="--dc:'+C[cur]+'">';
+var d=D[cur];h='<div class="t"><div class="base" style="--dc:'+C[cur]+'">📍 <b>住宿基準點</b><br>釜山市海雲臺區佐洞循環路 49 號 2F（五德豬排 2 樓）<div class="nt">最近地鐵約為 2 號線 장산역，步行約 5–10 分（以 Naver 為準）。每天第一程都從這裡算。<br>👥 5 人出遊：一般計程車只坐 4 人，請叫 2 台或 Kakao T 大型車；各項「計程車」金額為單台。</div><div class="row"><button class="nv cp" data-q="해운대구 좌동순환로 49">複製地址</button><a class="nv g" target="_blank" rel="noopener" href="'+ln("해운대구 좌동순환로 49")+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl("부산 해운대구 좌동순환로 49")+'">Google</a></div></div><div class="dh" style="--dc:'+C[cur]+'"><b>'+d.n+'</b>'+d.t+'</div><div class="tl" style="--dc:'+C[cur]+'">';
 d.items.forEach(function(it,j){var k="i"+cur+"-"+j,on=S[k];
-h+='<div class="it'+(on?" done":"")+'"><span class="dot"></span><div class="tm">'+it[0]+'</div><div class="cd"><div class="bd"><h3><i class="ic">'+ico(it[1])+'</i> '+it[1]+'</h3>'+(it[2]?'<div class="nt">'+it[2]+'</div>':"")+'<div class="row">'+(it[3]?'<span class="chip'+(it[5]?" pass":"")+'">'+it[3]+'</span>':"")+(it[4]?'<a class="nv" target="_blank" rel="noopener" href="'+ln(it[4])+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl(it[4])+'">Google</a>':"")+'</div>'+cmp(it[6])+'</div><label class="ck"><input type="checkbox" data-k="'+k+'" '+(on?"checked":"")+'><span></span></label></div></div>'});
+h+='<div class="it'+(on?" done":"")+'"><span class="dot"></span><div class="tm">'+it[0]+'</div><div class="cd"><div class="bd"><h3><i class="ic">'+ico(it[1])+'</i> '+it[1]+'</h3>'+(it[2]?'<div class="nt">'+it[2]+'</div>':"")+'<div class="row">'+(it[3]?'<span class="chip'+(it[5]?" pass":"")+'">'+it[3]+'</span>':"")+(it[4]?'<button class="nv cp" data-q="'+it[4]+'">複製地點</button><a class="nv g" target="_blank" rel="noopener" href="'+ln(it[4])+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl(it[4])+'">Google</a>':"")+'</div>'+cmp(it[6])+'</div><label class="ck"><input type="checkbox" data-k="'+k+'" '+(on?"checked":"")+'><span></span></label></div></div>'});
 h+="</div></div>";m.innerHTML=h;
 m.querySelectorAll("input").forEach(function(x){x.onchange=function(){S[x.dataset.k]=x.checked;sv();x.closest(".it").classList.toggle("done",x.checked);pg()}});pg();window.scrollTo(0,0)}
 var R=40.5;try{var rr=+localStorage.getItem("bsr");if(rr>0)R=rr}catch(e){}
@@ -159,6 +162,13 @@ var R=40.5;try{var rr=+localStorage.getItem("bsr");if(rr>0)R=rr}catch(e){}
 tw.oninput=function(){kw.value=Math.round(tw.value*R)};
 kw.oninput=function(){tw.value=Math.round(kw.value/R*10)/10};
 rt.oninput=function(){var v=+rt.value;if(v>0){R=v;try{localStorage.setItem("bsr",v)}catch(e){}kw.value=Math.round(tw.value*R)}}})();
+function openNaver(q){var ua=navigator.userAgent,web=ln(q),e=encodeURIComponent(q);
+if(/Android/i.test(ua)){location.href="intent://search?query="+e+"&appname=busan.trip#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;S.browser_fallback_url="+encodeURIComponent(web)+";end"}
+else if(/iPhone|iPad|iPod/i.test(ua)){location.href="nmap://search?query="+e+"&appname=busan.trip"}
+else window.open(web,"_blank")}
+document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a.nvn");if(a){ev.preventDefault();openNaver(a.getAttribute("data-q"))}});
+document.addEventListener("click",function(ev){var b=ev.target.closest&&ev.target.closest("button.cp");if(!b)return;var q=b.getAttribute("data-q");var done=function(){var t=document.getElementById("ts");t.textContent="已複製，貼到 Naver Map 搜尋即可";t.style.opacity=1;setTimeout(function(){t.style.opacity=0},2000)};
+try{var x=document.createElement("textarea");x.value=q;x.style.cssText="position:fixed;opacity:0";document.body.appendChild(x);x.select();x.setSelectionRange(0,999);document.execCommand("copy");document.body.removeChild(x);done()}catch(e){try{navigator.clipboard.writeText(q).then(done)}catch(e2){}}});
 render();
 </script>
 </body>
