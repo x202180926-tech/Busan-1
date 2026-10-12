@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="釜山行程">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#8fa3ad">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<title>釜山 4天3夜 行程</title>
+<style>
+:root{--bg:#f1eeea;--card:#fbf9f6;--tx:#3f3a37;--sub:#8a8480;--ac:#6f8795;--bd:#e4ded6;--chip:#e8ecec;--ok:#8fa99a;--sh:0 4px 14px rgba(90,75,60,.09);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#262321;--card:#322f2c;--tx:#ece6df;--sub:#a59e96;--ac:#a3b7c2;--bd:#443f3a;--chip:#3a4246;--ok:#9db8a6;--sh:0 4px 14px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#262321;--card:#322f2c;--tx:#ece6df;--sub:#a59e96;--ac:#a3b7c2;--bd:#443f3a;--chip:#3a4246;--ok:#9db8a6;--sh:0 4px 14px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;max-width:640px;margin:0 auto;padding-bottom:48px}
+header{margin:12px;padding:20px 18px 40px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#8fa3ad 0%,#a99bb0 55%,#c9ad98 100%);box-shadow:var(--sh);position:relative;overflow:hidden}
+header:after{content:"🌊";position:absolute;right:-6px;bottom:-18px;font-size:92px;opacity:.18}
+h1{font-size:24px;margin:0 0 4px;letter-spacing:.5px}
+.hs{font-size:13px;opacity:.92}
+.fl{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.fl span{background:rgba(255,255,255,.22);border-radius:999px;padding:3px 10px;font-size:12px;backdrop-filter:blur(4px)}
+.pr{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px}
+.bar{flex:1;height:7px;background:rgba(255,255,255,.3);border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:#fff;width:0;border-radius:4px;transition:width .35s}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);display:flex;gap:8px;padding:8px 12px;overflow-x:auto;z-index:5}
+nav button{flex:none;border:0;background:var(--card);color:var(--tx);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;box-shadow:var(--sh)}
+nav button.on{color:#fff}
+.t{padding:4px 12px}
+.dh{margin:6px 0 14px;padding:10px 14px;border-radius:14px;background:var(--card);border-left:5px solid var(--dc);box-shadow:var(--sh);font-size:15px}
+.dh b{color:var(--dc);margin-right:6px}
+.tl{position:relative;margin-left:8px;padding-left:20px;border-left:2px dashed var(--bd)}
+.it{position:relative;margin:0 0 14px}
+.dot{position:absolute;left:-29px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--dc);border:3px solid var(--bg)}
+.tm{font-weight:800;font-size:13px;color:var(--dc);font-variant-numeric:tabular-nums;margin-bottom:3px}
+.cd{display:flex;gap:10px;background:var(--card);border-radius:16px;padding:12px;box-shadow:var(--sh);transition:opacity .2s}
+.it.done .cd{opacity:.5}
+.it.done h3{text-decoration:line-through}
+.ic{font-style:normal}
+.bd{flex:1;min-width:0}
+h3{font-size:15px;margin:0 0 2px;line-height:1.4}
+.nt{color:var(--sub);font-size:13px}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{background:var(--chip);color:var(--ac);border-radius:8px;padding:3px 9px;font-size:12px;font-weight:600}
+.pass{background:#efe2c8;color:#7a6240}
+a.nv{font-size:12px;font-weight:600;color:#fff;background:var(--dc);border-radius:8px;padding:3px 10px;text-decoration:none}
+a.nv.g{background:var(--chip);color:var(--ac)}
+.ck{flex:none;position:relative;width:26px;height:26px;margin-top:1px}
+.ck input{position:absolute;opacity:0;width:100%;height:100%;margin:0}
+.ck span{display:block;width:26px;height:26px;border-radius:50%;border:2px solid var(--bd)}
+.ck input:checked+span{background:var(--ok);border-color:var(--ok)}
+.ck input:checked+span:after{content:"✓";display:block;color:#fff;text-align:center;line-height:22px;font-weight:700}
+.card{background:var(--card);border-radius:16px;padding:14px;margin:10px 12px;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+td{padding:8px 0;border-bottom:1px solid var(--bd)}
+td:last-child{text-align:right;white-space:nowrap;font-weight:600}
+.warn{font-size:12px;color:var(--sub);padding:0 18px}
+
+.oc{position:absolute;right:16px;top:12px;font-size:28px;transform-origin:50% 90%;animation:wig 2.4s ease-in-out infinite}
+.sea{position:absolute;left:0;right:0;bottom:4px;height:30px;pointer-events:none;overflow:hidden}
+.boat{position:absolute;bottom:0;font-size:22px;animation:sail 15s linear infinite,bob 2s ease-in-out infinite}
+@keyframes wig{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+@keyframes sail{from{left:-10%}to{left:104%}}
+@keyframes bob{0%,100%{margin-bottom:0}50%{margin-bottom:4px}}
+@keyframes pop{50%{transform:scale(1.35)}}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+.it{animation:up .4s both}
+.ck input:checked+span{animation:pop .3s}
+.wx{margin-top:10px;font-size:12px;background:rgba(255,255,255,.22);border-radius:10px;padding:6px 10px}
+.wx a{color:#fff;font-weight:700}
+.fx{display:flex;align-items:center;gap:8px;margin-top:8px}
+.fx label{flex:1;display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.22);border-radius:10px;padding:5px 10px;font-size:13px}
+.fx input,.rt input{width:100%;min-width:0;background:transparent;border:0;color:#fff;font:inherit;font-weight:700;outline:0}
+.rt{margin-top:6px;font-size:11px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.rt input{width:52px;border-bottom:1px dashed #fff;text-align:center}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.cmp{margin-top:8px;padding:8px 10px;border-radius:10px;background:var(--chip);font-size:12px;line-height:1.6}.cmp .rec{font-weight:700;color:var(--dc);margin-top:2px}
+.base{margin:6px 0 10px;padding:10px 14px;border-radius:14px;background:var(--card);box-shadow:var(--sh);font-size:13px;border-left:5px solid var(--dc)}
+</style>
+</head>
+<body>
+<header><span class="oc">🐙</span><h1>釜山 4天3夜 🇰🇷</h1><div class="hs">海雲台左洞住宿 ・ Visit Busan Pass Big 3<br>價格為約數（₩），出發前請再核對</div><div class="fl"><span>✈️ 真航空 02:10 → 06:10</span><span>🛬 華航 10:10 → 11:50</span></div><div class="wx">🌤 十月釜山約 14–23°C，早晚涼，備薄外套與折傘 ・ <a href="https://www.google.com/search?q=%E9%87%9C%E5%B1%B1+%E5%A4%A9%E6%B0%A3" target="_blank" rel="noopener">查即時天氣</a></div><div class="fx"><label>NT$<input id="tw" type="number" inputmode="decimal"></label><span>⇄</span><label>₩<input id="kw" type="number" inputmode="decimal"></label></div><div class="rt">1 NT$ ≈ ₩<input id="rt" type="number" inputmode="decimal" step="0.1">（臺銀 8 月現金賣出參考，出發前請更新）</div><div class="pr"><div class="bar"><i id="pb"></i></div><span id="pt">0/0</span></div><div class="sea"><span class="boat">⛵</span></div></header>
+<nav id="nav"></nav>
+<div id="main"></div>
+<p class="warn">導航按鈕會開 Naver 地圖（韓國最準）與 Google 地圖。打勾進度會存在這支手機的瀏覽器。</p>
+<script>
+var D=[
+{n:"Day 1",t:"補眠・天空膠囊・海雲台",items:[
+["02:10","台北桃園起飛（真航空）","建議 23:30 前到機場；夜間班機記得帶薄外套","",""],
+["06:10","抵達金海機場，與接機司機會合","入境、領行李後依接機指示集合，司機直接送到住宿","接機已安排","김해국제공항"],
+["07:30","抵達住宿，寄放行李、補眠","地址給司機看：부산 해운대구 좌동순환로 49 2층（五德豬排 2 樓）；睡到中午，行程從午後開始","","해운대구 좌동순환로 49"],
+["12:30","起床出發，午餐：密陽豬肉湯飯 海雲台店","24 小時營業，熱湯暖胃","₩10,000/人","밀양순대돼지국밥 해운대점","",{"a": "장산역 步行約 5–10 分＋車程約 6–8 分，₩1,700/人（3 人 ₩5,100、4 人 ₩6,800）", "b": "約 10–15 分，₩5,000–7,000（3 人每人約 ₩2,000、4 人約 ₩1,500）", "r": "睡完要趕行程 → 3–4 人搭計程車，差價小又省時間；人少又不趕才搭地鐵"}],
+["14:00","計程車到 Mipo 站（미포정거장）","從海雲台站約 10 分鐘","計程車約 ₩4,000–5,000","해운대 블루라인파크 미포정거장"],
+["14:30","天空膠囊 미포 → 청사포","❌不含 Pass，先在 Blueline Park 官網訂好 14:30 左右場次，靠海側","約 ₩35,000 起/車廂","해운대 블루라인파크 미포정거장"],
+["15:00","青沙浦：紅白燈塔、踏石展望台","約 1 小時，天黑前最好看","免費","청사포 다릿돌전망대"],
+["16:15","海邊列車 Beach Train 回 Mipo ⭐Pass 第 1 項","Pass 抵扣；累了也可改搭計程車","原價約 ₩8,000–10,000","청사포정거장","pass"],
+["17:15","Busan X the SKY ⭐Pass 第 2 項","LCT 大樓，日落前後最美；從 Mipo 搭計程車約 ₩4,000–5,000","原價約 ₩27,000","부산엑스더스카이","pass"],
+["18:45","晚餐：갈비가 맛있다（烤排骨）","店家位置請在 Naver 搜尋店名確認，價格以現場菜單為準","約 ₩20,000–35,000/人","갈비가 맛있다 해운대"],
+["20:15","海雲台逛逛：海灘夜景、市場小吃","吃飽散步，別太晚","免費","해운대해수욕장"],
+["21:15","回住宿","地鐵 ₩1,700 內，或計程車 ₩5,000–7,000","","해운대구 좌동순환로 49"]
+]},
+{n:"Day 2",t:"滑坡車・樂天 Outlet・海東龍宮寺",items:[
+["09:30","從住宿出發到 Skyline Luge 滑坡車","開放約 10:00；先在官網或票券平台買票通常較便宜","計程車約 ₩20,000–25,000","스카이라인 루지 부산","",{"a": "장산역 → 2 號線到 벡스코 → 轉東海線到 오시리아，再走約 10 分，合計約 50–60 分、約 ₩3,400/人", "b": "約 25–35 分，₩20,000–25,000（3 人每人約 ₩7,500、4 人約 ₩5,500）", "r": "計程車省 25 分鐘以上，每人多付約 ₩2,000–4,000 → 建議計程車；想省錢才搭地鐵（以 Naver 路線為準）"}],
+["10:15","Skyline Luge 滑坡車（Sky Ride 纜車上山）","3–5 次；營業約 10:00–18:00，最後入場提早 30 分","約 ₩26,000–37,000/人（依次數與票券）","스카이라인 루지 부산"],
+["12:00","午餐：樂天 Outlet 美食街","步行或計程車 ₩5,000 內","₩10,000–15,000/人","롯데프리미엄아울렛 동부산점"],
+["13:00","樂天 Premium Outlet 東釜山店逛街","外國旅客可辦退稅，記得帶護照","自備購物金","롯데프리미엄아울렛 동부산점"],
+["15:45","計程車到 海東龍宮寺（해동용궁사）","臨海寺廟，免費入場，車程約 10–15 分","計程車約 ₩8,000–12,000","해동용궁사"],
+["17:15","松亭海灘（송정해수욕장）看日落","海灘咖啡街散步，離龍宮寺約 10 分鐘","計程車約 ₩5,000–8,000","송정해수욕장"],
+["18:45","晚餐：松亭海鮮或烤肉","","₩12,000–25,000/人","송정 맛집"],
+["20:15","回住宿","計程車約 ₩15,000–22,000（4 人分攤划算）","","해운대구 좌동순환로 49"]
+]},
+{n:"Day 3",t:"松島・影島・西面",items:[
+["09:00","從住宿出發，Kakao T 叫車到松島","3–4 人合乘最划算","計程車約 ₩28,000–35,000","송도해상케이블카 송도베이스테이션","",{"a": "장산역 → 西面轉 1 號線 → 南浦轉公車，約 1.5–2 小時，₩3,000–4,000/人", "b": "約 40–55 分，₩28,000–35,000（3 人每人約 ₩10,000、4 人約 ₩8,000）", "r": "計程車省 1 小時以上，分攤後每人 ₩8,000–10,000 → 建議計程車（Kakao T）"}],
+["09:45","松島海上纜車（水晶車廂）⭐Pass 第 3 項","21:00 營業，早去人少","原價約 ₩20,000","송도해상케이블카 송도베이스테이션","pass"],
+["11:15","松島龍宮雲橋散步","","免費","송도용궁구름다리"],
+["12:15","計程車到影島 海女村","約 30 分鐘","₩15,000–20,000","영도해녀촌"],
+["12:45","午餐：海女海鮮拉麵＋海膽紫菜飯捲","海況不好可能休息，先查營業","₩15,000–25,000/人","영도해녀촌"],
+["14:30","P.ARK 海景烘焙咖啡廳","營業到 22:00","₩10,000–15,000/人","P.ARK 영도"],
+["16:30","計程車到西面","約 30–40 分鐘","₩15,000–20,000","서면역"],
+["17:30","晚餐：西面美食（豬肉湯飯小巷、烤肉）","","₩12,000–25,000/人","서면 맛집"],
+["19:00","西面逛街：地下街、樂天百貨、1 番街、田浦咖啡街","","自備購物金","서면 지하상가"],
+["21:45","回住宿","地鐵 2 號線 西面 → 장산역約 40–45 分、₩1,700 內；3–4 人也可計程車約 ₩25,000–30,000","","해운대구 좌동순환로 49"],
+["22:30","回住宿，打包行李（明早很早）","護照、登機證放最外面","",""]
+]},
+{n:"Day 4",t:"早班返程",items:[
+["05:45","起床，最後檢查","充電寶放隨身、退稅單、伴手禮","",""],
+["06:15","Check-out","前一晚先結帳、先叫好車更保險","",""],
+["06:30","從住宿搭車到金海機場","清晨車少，Kakao T 預約最保險","計程車約 ₩40,000–50,000","김해국제공항 국제선","",{"a": "장산역 → 沙上站轉金海輕軌，約 1 小時 20 分，₩2,900–3,300/人，首班車約 05:30", "b": "約 45–55 分，₩40,000–50,000（3 人每人約 ₩15,000、4 人約 ₩11,000）", "r": "要趕 10:10 的班機 → 建議計程車，前一晚先用 Kakao T 預約；想省錢才搭地鐵，須 05:30 前出門"}],
+["07:20","抵達機場","國際線 08:10 前辦完最安心","","김해국제공항 국제선"],
+["07:30","報到、託運、退稅、免稅店","","",""],
+["09:30","登機門就位","","",""],
+["10:10","華航起飛 釜山 → 台北","","",""],
+["11:50","抵達台北桃園","","",""]
+]}
+];
+var B=[["飲食（含早午晚）","₩110,000–180,000"],["計程車（3–4 人分攤）","₩50,000–70,000"],["天空膠囊","₩17,500 起/人"],["滑坡車","約 ₩26,000–37,000"],["地鐵零星","₩10,000"],["Pass 抵扣項目原價合計","約 ₩55,000–57,000"]];
+var PRE=["啟用 Visit Busan Pass（App / QR）","訂天空膠囊車票（Blueline Park 官網）","安裝 Kakao T、Naver Map","準備 eSIM 或漫遊","護照效期、行李秤重","Day 1 / Day 4 住宿確認寄放與早退房","Skyline Luge 先買票（官網或票券平台）","天空膠囊訂 Day 1 下午場次"];
+var S={};try{S=JSON.parse(localStorage.getItem("bsn")||"{}")}catch(e){}
+function sv(){try{localStorage.setItem("bsn",JSON.stringify(S))}catch(e){}}
+var cur=0,C=["#c98f87","#86a393","#9a97b5","#c4a77c"];function ico(t){var m=[["起飛","✈️"],["抵達","🛬"],["機場","🛬"],["SPA","♨️"],["纜車","🚡"],["膠囊","🚃"],["列車","🚃"],["SKY","🌃"],["早餐","🥞"],["午餐","🍜"],["晚餐","🍖"],["輕軌","🚇"],["地鐵","🚇"],["計程車","🚕"],["Kakao","🚕"],["Check","🏨"],["飯店","🏨"],["起床","⏰"],["報到","🧳"],["咖啡","☕"],["P.ARK","🥐"],["逛街","🛍️"],["海灘","🏖️"],["燈塔","🏖️"],["雲橋","🌉"],["登機","🛫"]];for(var i=0;i<m.length;i++)if(t.indexOf(m[i][0])>-1)return m[i][1];return "📍"}
+function pg(){var tot=0,dn=0;D.forEach(function(d,i){d.items.forEach(function(_,j){tot++;if(S["i"+i+"-"+j])dn++})});document.getElementById("pb").style.width=(tot?dn/tot*100:0)+"%";document.getElementById("pt").textContent=dn+"/"+tot+" 完成"}
+function nav(){var h="";D.forEach(function(d,i){h+='<button class="'+(cur===i?"on":"")+'" data-i="'+i+'"'+(cur===i?' style="background:'+C[i]+'"':"")+'>'+d.n+'</button>'});h+='<button class="'+(cur===9?"on":"")+'" data-i="9"'+(cur===9?' style="background:#8a8480"':"")+'>預算・清單</button>';var n=document.getElementById("nav");n.innerHTML=h;n.querySelectorAll("button").forEach(function(b){b.onclick=function(){cur=+b.dataset.i;render()}})}
+function cmp(c){return c?'<div class="cmp"><div>🚇 '+c.a+'</div><div>🚕 '+c.b+'</div><div class="rec">✅ '+c.r+'</div></div>':""}
+function ln(k){return "https://map.naver.com/p/search/"+encodeURIComponent(k)}
+function gl(k){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(k)}
+function render(){nav();var m=document.getElementById("main"),h="";
+if(cur===9){h='<div class="card"><b>💰 預算估計（每人）</b><table>';B.forEach(function(r){h+="<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"});h+='</table></div><div class="card"><b>✅ 行前清單</b>';PRE.forEach(function(p,k){var c=S["p"+k]?"checked":"";h+='<label style="display:flex;gap:10px;align-items:center;padding:6px 0"><input type="checkbox" data-p="'+k+'" '+c+'>'+p+'</label>'});h+="</div>";m.innerHTML=h;m.querySelectorAll("input").forEach(function(x){x.onchange=function(){S["p"+x.dataset.p]=x.checked;sv()}});pg();return}
+var d=D[cur];h='<div class="t"><div class="base" style="--dc:'+C[cur]+'">📍 <b>住宿基準點</b><br>釜山市海雲臺區佐洞循環路 49 號 2F（五德豬排 2 樓）<div class="nt">最近地鐵約為 2 號線 장산역，步行約 5–10 分（以 Naver 為準）。每天第一程都從這裡算。</div><div class="row"><a class="nv" target="_blank" rel="noopener" href="'+ln("해운대구 좌동순환로 49")+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl("부산 해운대구 좌동순환로 49")+'">Google</a></div></div><div class="dh" style="--dc:'+C[cur]+'"><b>'+d.n+'</b>'+d.t+'</div><div class="tl" style="--dc:'+C[cur]+'">';
+d.items.forEach(function(it,j){var k="i"+cur+"-"+j,on=S[k];
+h+='<div class="it'+(on?" done":"")+'"><span class="dot"></span><div class="tm">'+it[0]+'</div><div class="cd"><div class="bd"><h3><i class="ic">'+ico(it[1])+'</i> '+it[1]+'</h3>'+(it[2]?'<div class="nt">'+it[2]+'</div>':"")+'<div class="row">'+(it[3]?'<span class="chip'+(it[5]?" pass":"")+'">'+it[3]+'</span>':"")+(it[4]?'<a class="nv" target="_blank" rel="noopener" href="'+ln(it[4])+'">Naver 導航</a><a class="nv g" target="_blank" rel="noopener" href="'+gl(it[4])+'">Google</a>':"")+'</div>'+cmp(it[6])+'</div><label class="ck"><input type="checkbox" data-k="'+k+'" '+(on?"checked":"")+'><span></span></label></div></div>'});
+h+="</div></div>";m.innerHTML=h;
+m.querySelectorAll("input").forEach(function(x){x.onchange=function(){S[x.dataset.k]=x.checked;sv();x.closest(".it").classList.toggle("done",x.checked);pg()}});pg();window.scrollTo(0,0)}
+var R=40.5;try{var rr=+localStorage.getItem("bsr");if(rr>0)R=rr}catch(e){}
+(function(){var tw=document.getElementById("tw"),kw=document.getElementById("kw"),rt=document.getElementById("rt");rt.value=R;tw.value=1000;kw.value=Math.round(1000*R);
+tw.oninput=function(){kw.value=Math.round(tw.value*R)};
+kw.oninput=function(){tw.value=Math.round(kw.value/R*10)/10};
+rt.oninput=function(){var v=+rt.value;if(v>0){R=v;try{localStorage.setItem("bsr",v)}catch(e){}kw.value=Math.round(tw.value*R)}}})();
+render();
+</script>
+</body>
+</html>
